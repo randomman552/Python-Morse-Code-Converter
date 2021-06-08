@@ -54,3 +54,29 @@ def to_plaintext(morse: str) -> str:
                 output = f"{output}{char}"
                 break
     return output
+
+
+def is_morse(text: str) -> bool:
+    for char in translation_map:
+        if text.find(char) != -1:
+            return False
+    return True
+
+
+def main():
+    running = True
+    print("Enter text to convert")
+    while running:
+        text_in = input("> ").lower()
+
+        if text_in == "exit":
+            print("Goodbye")
+            running = False
+        elif is_morse(text_in):
+            print(to_plaintext(text_in))
+        else:
+            print(to_morse(text_in))
+
+
+if __name__ == "__main__":
+    main()
