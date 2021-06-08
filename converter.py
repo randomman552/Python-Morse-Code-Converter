@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 translation_map = {
     "a": ".-",
     "b": "-...",
