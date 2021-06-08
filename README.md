@@ -10,12 +10,20 @@ In order to run the program, first clone this repository with the following comm
 ```shell script
 https://github.com/randomman552/Python-Morse-Code-Converter.git
 ```
-To run the terminal implementation of this program, use this command:
+To run the terminal implementation of this program, on unix run:
 ```shell script
 ./converter.py
 ```
+on windows, double click the file or run the following command in command prompt:
+```commandline
+converter.py
+```
 
-For the GUI, use this command:
+For the GUI, on unix run:
 ```shell script
 ./converter_gui.py
+```
+on windows, double click the file or run the following command in command prompt:
+```commandline
+converter_gui.py
 ```
