@@ -41,8 +41,10 @@ translation_map = {
 
 def to_morse(text: str) -> str:
     text = text.lower()
-    output = ""
-    for char in text:
+    # Do first character separately to avoid extra space character
+    char = text[0]
+    output = translation_map.get(char, char)
+    for char in text[1::]:
         output = f"{output} {translation_map.get(char, char)}"
     return output
 
