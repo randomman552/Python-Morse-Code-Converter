@@ -60,6 +60,7 @@ def to_plaintext(morse: str) -> str:
 
 
 def is_morse(text: str) -> bool:
+    text = text.lower()
     for char in translation_map:
         if text.find(char) != -1:
             return False
