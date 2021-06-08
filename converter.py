@@ -54,6 +54,8 @@ def to_plaintext(morse: str) -> str:
             if translation_map.get(char) == morse:
                 output = f"{output}{char}"
                 break
+        else:
+            output = f"{output}{morse}"
     return output
 
 
